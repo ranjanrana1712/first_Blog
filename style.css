@@ -49,8 +49,11 @@ body{
     list-style: none;
 }
 
+/* arranged all elements in single row */
 #list-inline{
     display: inline;
+    padding: 0.2rem;    
+    
 }
 
 
