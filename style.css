@@ -42,6 +42,26 @@ body{
 }
 
 
+/* decorating css */
+
+/* removing the bullet points */
+.list-non-bullet{
+    list-style: none;
+}
+
+#list-inline{
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
