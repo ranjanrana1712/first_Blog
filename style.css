@@ -1,69 +1,238 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
 
-:root{
-    --primary-color:#5b21b6;
+:root {
+    --primary-color: #5b21b6;
+    --dark-gray: rgb(127, 139, 136);
+    --light-gray: rgb(240, 224, 229);
+
 }
 
-body{
+body {
     font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0px;
 }
+
 /** container **/
-.container-fluid{
+.container-fluid {
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-.container{
-    max-width: 600px;
-    margin:auto;
+.container {
+    max-width: 500px;
+    margin: auto;
 
-    
+
 }
+
 /** adding color to primary **/
 
 /* adding css style to link */
 
-.link{
+.link {
     text-decoration: none;
-    padding: 0.5rem 1.0rem;
+    padding: 0.rem 1.0rem;
 }
 
-.link-primary{
+.lp{
+    text-align: center;
+    display: block;
+    width: 110px;
+    
+    margin:auto;
+
+
+}
+
+.link-primary {
     background-color: var(--primary-color);
     border-radius: 0.5rem;
-    color: white;
+    border-bottom-width: 2rem;
+    color: white;  
+    
+
+    
+     
 }
 
-.link-secondary{
+.link-secondary {
     color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
-
+    display: inline;
 }
 
 
 /* decorating css */
 
 /* removing the bullet points */
-.list-non-bullet{
+.list-non-bullet {
     list-style: none;
 }
 
 /* arranged all elements in single row */
-#list-inline{
+.list-inline {
     display: inline;
-    padding: 0.2rem;    
+    padding: 0.2rem;
+
+}
+
+/* decorating nav */
+
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
     
+
+
+}
+
+/* i have made i am brand in bold */
+
+.nav-brand {
+    font-weight: bold;
+}
+
+/* i have moved all link to the right */
+
+.nav-pill {
+    text-align: right;
+}
+
+/* made all all link color to white using overriding method
+
+if link is present in navigation then ovverride the color of navigation color */
+.navigation .link {
+    color: white;
+
+}
+
+/* if is user is on home page then it will look bold */
+.link-active {
+    font-weight: bold;
+}
+
+.navigation {
+    border-bottom-left-radius: 1rem;
+}
+
+/* decorating  image */
+
+
+/* idk */
+
+.hero {
+    padding: 2rem;
+}
+
+/* setting the attribute of img(widt,margin) */
+
+.hero-img {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+
+}
+
+/* adding color to the header */
+.hero-heading {
+
+    color: var(--dark-gray)
+}
+
+/* moving the text in center */
+.hero-heading {
+    padding-top: 2rem;
+
+    text-align: center;
+}
+
+/* making middle word bold and coloring with green */
+
+.inverted-heading {
+    color: rgb(0, 51, 128);
+}
+
+/* decorating section */
+
+.main-section {
+    padding: 1rem;
+    padding-left: 0rem;
+
+}
+
+h3 {
+    text-align: center;
+
+}
+.bringtocenter{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.ow {
+    background-color: var(--light-gray);
+}
+
+/* decorating footer */
+
+
+
+
+.footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    border-top-right-radius: 1rem;
+    padding: 2rem;
+    color: white;
+
+}
+
+.footer ul {
+
+    word-spacing: 30px;
+    padding-inline-start: 2px;
 }
 
 
+.colorforfooterlink{
+    color: white;
+    /* text-decoration: none; */
+}
+
+.footer-heading{
+    font-weight: bold;
+    font-size: large;
+}
 
 
+/* decoration of blogs elements */
 
+.changecolor{
+    background-color:red;
+    width: 400px;
+    margin: auto;
+    color: yellow;
+}
+.giveborder{
+    display: block;
+    border: solid
+    1px;
 
+}
+.strg{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+}
 
-
+.three{
+    color: var(--primary-color); 
+    padding-top: 2rem;
+}
 
 
 
